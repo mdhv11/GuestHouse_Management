@@ -1,0 +1,54 @@
+/* Base styles for the container */
+.register-login-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adjust for spacing within the navbar */
+  }
+  
+  /* Heading */
+  .register-login-option h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Mode toggle button */
+  .register-login-option .mode-toggle {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Form */
+  .register-login-option form {
+    width: 100%;
+  }
+  
+  /* Form fields */
+  .register-login-option label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-login-option input[type="text"],
+  .register-login-option input[type="email"],
+  .register-login-option input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  .register-login-option button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

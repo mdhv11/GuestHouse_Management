@@ -1,27 +1,63 @@
-.navbar{
-    height: 50px;
-    background-color: #003580;
-    display: flex;
-    justify-content: center;
+/* navbar.css */
+
+.navbar {
+  background-color: rgba(136, 191, 227, 0.8); /* Use an RGBA color with reduced opacity */
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  margin-top: auto;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+.navButton {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-text{
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: inherit;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .navContainer{
-    width: 100%;
-    max-width: 1024px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .navItems {
+    margin-top: 10px;
   }
 
-  .logo{
-    font-weight: 500;
+  .navButton {
+    margin: 5px 0;
   }
-
-  .navButton{
-    margin-left: 20px;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    color: #003580;
-  }
+}

@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +24,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/home/mdhv/Documents/Hindalco/assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Make sure the background covers the entire viewport */
+  font-family: 'Arial', sans-serif; /* Use your preferred font-family */
+}
+
+.content-container {
+  /* Add any additional styling for your content container */
+  position: relative;
+  z-index: 1; /* Ensure your content appears above the background image */
 }
